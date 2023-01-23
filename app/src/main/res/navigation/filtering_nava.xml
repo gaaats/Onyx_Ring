@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filtering_nava"
+    app:startDestination="@id/m1Fragment">
+
+        <fragment
+            android:id="@+id/m1Fragment"
+            android:name="com.ferrero.app.cont.M1Fragment"
+            android:label="fragment_m1"
+            tools:layout="@layout/fragment_m1" >
+            <action
+                android:id="@+id/action_m1Fragment_to_contryyyyyFragment"
+                app:destination="@id/contryyyyyFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/contryyyyyFragment"
+            android:name="com.ferrero.app.fragments.ContryyyyyFragment"
+            android:label="fragment_contryyyyy"
+            tools:layout="@layout/fragment_contryyyyy" >
+            <action
+                android:id="@+id/action_contryyyyyFragment_to_secMainFragFragment"
+                app:destination="@id/secMainFragFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/secMainFragFragment"
+            android:name="com.ferrero.app.oththth.SecMainFragFragment"
+            android:label="fragment_sec_main_frag"
+            tools:layout="@layout/fragment_sec_main_frag" >
+            <action
+                android:id="@+id/action_secMainFragFragment_to_befooorFragment"
+                app:destination="@id/befooorFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/befooorFragment"
+            android:name="com.ferrero.app.fragments.BefooorFragment"
+            android:label="fragment_befooor"
+            tools:layout="@layout/fragment_befooor" >
+            <action
+                android:id="@+id/action_befooorFragment_to_fillllyFragment"
+                app:destination="@id/fillllyFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/fillllyFragment"
+            android:name="com.ferrero.app.fragments.FillllyFragment"
+            android:label="fragment_filllly"
+            tools:layout="@layout/fragment_filllly" />
+</navigation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gamer_naviigator"
+    app:startDestination="@id/d1Fragment">
+
+    <fragment
+        android:id="@+id/d1Fragment"
+        android:name="com.ferrero.app.fragments.D1Fragment"
+        android:label="fragment_d1"
+        tools:layout="@layout/fragment_d1" >
+        <action
+            android:id="@+id/action_d1Fragment_to_d2Fragment"
+            app:destination="@id/d2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/d2Fragment"
+        android:name="com.ferrero.app.fragments.D2Fragment"
+        android:label="fragment_d2"
+        tools:layout="@layout/fragment_d2" >
+        <action
+            android:id="@+id/action_d2Fragment_to_d1Fragment"
+            app:destination="@id/d1Fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/d1Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_d2Fragment_to_g3Fragment"
+            app:destination="@id/g3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/g3Fragment"
+        android:name="com.ferrero.app.G3Fragment"
+        android:label="fragment_g3"
+        tools:layout="@layout/fragment_g3" >
+        <action
+            android:id="@+id/action_g3Fragment_to_d2Fragment"
+            app:destination="@id/d2Fragment" />
+    </fragment>
+</navigation>

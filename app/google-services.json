@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "968720079021",
+    "project_id": "onyx-ring",
+    "storage_bucket": "onyx-ring.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968720079021:android:4eb0c64000e8ad6b7e8e24",
+        "android_client_info": {
+          "package_name": "com.ferrero.ap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968720079021-e2eb3ed8043m8uac6akiuvqveqm0jq30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkq6F540DR4OxnE96UlX1mChUAbCUjWiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968720079021-e2eb3ed8043m8uac6akiuvqveqm0jq30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
